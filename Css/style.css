@@ -4,11 +4,6 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 a {
@@ -73,6 +68,14 @@ nav .profile__link a {
     border-bottom: 1px solid black;
 }
 
+.home__body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -128,7 +131,7 @@ nav .profile__link a {
 }
 
 .blogs__news_img_container img {
-    width: 400px;
+    width: 85%;
     height: 300px;
     object-fit: cover;
 }
@@ -141,8 +144,18 @@ nav .profile__link a {
     margin-bottom: 35px;
 }
 
+.blogs__post_container {
+    padding: 0 50px 40px;
+}
+
+.blogs__post_container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .posts__container img {
-    width: 400px;
+    width: 85%;
     height: 300px;
     object-fit: cover;
 }
